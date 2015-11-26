@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/henrikmathiesen/angularHtml5Routing/issues"
   },
-  "homepage": "https://github.com/henrikmathiesen/angularHtml5Routing#readme"
+  "homepage": "https://github.com/henrikmathiesen/angularHtml5Routing#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
