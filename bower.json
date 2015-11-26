@@ -1,0 +1,19 @@
+{
+  "name": "angularHtml5Routing",
+  "version": "0.0.0",
+  "homepage": "https://github.com/henrikmathiesen/angularHtml5Routing",
+  "authors": [
+    "Henrik Mathiesen <henrik_mathiesen@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
