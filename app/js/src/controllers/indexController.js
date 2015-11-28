@@ -1,7 +1,7 @@
 (function(){
 	
 	var indexController = function($scope){
-		console.log("indexController controller running");
+		console.log("indexController running");
 	};
 	
 	
