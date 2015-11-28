@@ -31,6 +31,7 @@ module.exports = function (grunt) {
 				options: { compress: { pure_funcs: ['console.log'] } }
 			}
 		},
+		
 		watch: {
 			scripts: {
 				files: ['./app/js/src/**/*.js'],
