@@ -4,9 +4,8 @@ var app = express();
 
 //
 // Set access to static files; virtual path and actual path
-app.use('/',  express.static(__dirname + '/app/js/bld'));
-app.use('/',  express.static(__dirname + '/app/sass/bld'));
-app.use('/',  express.static(__dirname + '/app/views'));
+app.use('/app/js',  express.static(__dirname + '/app/js/bld'));
+app.use('/app/views',  express.static(__dirname + '/app/views'));
 
 //
 // Serve the index.html for all routes (front end routing will take it from there)

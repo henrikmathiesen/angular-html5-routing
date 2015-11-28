@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <base href="/">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +11,14 @@
   <body ng-app="angularHtml5Routing">
     <h1>Angular HTML5 Routing</h1>
     
+    <ul>
+      <li><a href="/">Index view</a></li>
+      <li><a href="/test">Test view</a></li>
+    </ul>
     
-    <script src="/lib.js"></script>
-    <script src="/app.js"></script>
+    <div ng-view=""></div>
+    
+    <script src="/app/js/lib.js"></script>
+    <script src="/app/js/app.js"></script>
   </body>
 </html>

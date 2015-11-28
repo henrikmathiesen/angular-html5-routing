@@ -13,7 +13,9 @@ module.exports = function (grunt) {
 			'./bower_components/angular-route/angular-route.js'
 		],
 		'./app/js/bld/app.js': [
-			'./app/js/src/modules/angularHtml5Routing.js'
+			'./app/js/src/modules/angularHtml5Routing.js',
+			'./app/js/src/controllers/indexController.js',
+			'./app/js/src/controllers/testController.js'
 		]
 	}
 
