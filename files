@@ -1,5 +1,0 @@
-!function(){angular.module("angularHtml5Routing",["ngRoute"])}(),function(){var a=function(a,b){a.when("/",{templateUrl:"/app/views/index.html",controller:"indexController"}).when("/test",{templateUrl:"/app/views/test.html",controller:"testController"}).otherwise("/"),b.html5Mode(!0)};
-a.$inject = ["a", "b"];angular.module("angularHtml5Routing").config(a)}(),function(){var a=function(a){console.log("indexController running")};
-a.$inject = ["a"];angular.module("angularHtml5Routing").controller("indexController",a)}(),function(){var a=function(a){console.log("testController running")};
-a.$inject = ["a"];angular.module("angularHtml5Routing").controller("testController",a)}();
-//# sourceMappingURL=app.js.map

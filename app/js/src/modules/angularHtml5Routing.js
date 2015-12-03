@@ -10,6 +10,7 @@
 	var config = function($routeProvider, $locationProvider){
 		
 		$routeProvider
+		
 		.when('/', {
 			templateUrl: '/app/views/index.html',
 			controller: 'indexController'
@@ -18,6 +19,11 @@
 			templateUrl: '/app/views/test.html',
 			controller: 'testController'
 		})
+		.when('/scope-apply', {
+			templateUrl: '/app/views/scope-apply.html',
+			controller: 'scopeApplyController'
+		})
+		
 		.otherwise('/');
 		
 		$locationProvider.html5Mode(true);

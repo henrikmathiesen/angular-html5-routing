@@ -8,14 +8,16 @@ module.exports = function (grunt) {
 
 
 	var jsBundle = {
-		'./app/js/bld/lib.js': [
+		'./app/js/bld/lib-jq.js': [
+			'./bower_components/jquery/dist/jquery.js',
+		],
+		'./app/js/bld/lib-ng.js': [
 			'./bower_components/angular/angular.js',
 			'./bower_components/angular-route/angular-route.js'
 		],
 		'./app/js/bld/app.js': [
 			'./app/js/src/modules/angularHtml5Routing.js',
-			'./app/js/src/controllers/indexController.js',
-			'./app/js/src/controllers/testController.js'
+			'./app/js/src/controllers/*.js'
 		]
 	}
 
