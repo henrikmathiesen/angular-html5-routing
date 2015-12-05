@@ -17,7 +17,8 @@ module.exports = function (grunt) {
 		],
 		'./app/js/bld/app.js': [
 			'./app/js/src/modules/angularHtml5Routing.js',
-			'./app/js/src/controllers/*.js'
+			'./app/js/src/controllers/*.js',
+			'./app/js/src/directives/*.js'
 		]
 	}
 
