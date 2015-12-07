@@ -44,7 +44,7 @@
 		/*
 			$scope.apply() vs $rootScope.$apply()
 		
-			Running $apply on any scope always results in a $rootscope.$digest. 
+			Running $apply on any scope always results in a $rootscope.$digest.
 			The only case where it might make a difference is when you provide 
 			an expression as an argument to $apply. The expression will be evaluated
 			in the current scope (vs. $rootScope), but afterwards $rootscope.$digest is always called.
