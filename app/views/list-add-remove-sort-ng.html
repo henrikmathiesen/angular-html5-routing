@@ -3,8 +3,8 @@
 <ul>
 	<li ng-repeat="name in names">
 		<span>{{ name }}</span>&nbsp;&nbsp;
-		<span ng-click="sortUp($index)">Up</span>&nbsp;&nbsp;
-		<span ng-click="sortDown($index)">Down</span>&nbsp;&nbsp;
+		<span ng-show="names.length > 1" ng-click="sortUp($index)">Up</span>&nbsp;&nbsp;
+		<span ng-show="names.length > 1" ng-click="sortDown($index)">Down</span>&nbsp;&nbsp;
 		<span ng-click="removeName($index)">Remove</span>&nbsp;&nbsp;
 	</li>
 </ul>
