@@ -5,6 +5,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-ng-annotate');
 
 
 	var jsBundleLib = {
@@ -16,7 +17,7 @@ module.exports = function (grunt) {
 			'./bower_components/angular-route/angular-route.js'
 		]
 	};
-	
+
 	var jsBundleApp = {
 		'./app/js/bld/app.js': [
 			'./app/js/src/modules/angularHtml5Routing.js',
@@ -27,6 +28,7 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		clean: ['./app/js/bld'],
+
 		uglify: {
 			devLib: {
 				files: jsBundleLib,
@@ -45,7 +47,18 @@ module.exports = function (grunt) {
 				options: { compress: { pure_funcs: ['console.log'] } }
 			}
 		},
-		
+
+		ngAnnotate: {
+			options: {
+				singleQuotes: true,
+			},
+			app: {
+				files: { 
+					'./app/js/bld/app.js': ['./app/js/bld/app.js'] 
+				}
+			}
+		},
+
 		watch: {
 			scripts: {
 				files: ['./app/js/src/**/*.js'],
@@ -54,11 +67,11 @@ module.exports = function (grunt) {
 		}
 	});
 
-	
-	
-	
-	grunt.registerTask('dev', ['clean', 'uglify:devLib', 'uglify:devApp']);
-	grunt.registerTask('prod', ['clean', 'uglify:prodLib', 'uglify:prodApp']);
+
+
+
+	grunt.registerTask('dev', ['clean', 'uglify:devLib', 'uglify:devApp', 'ngAnnotate:app']);
+	grunt.registerTask('prod', ['clean', 'uglify:prodLib', 'uglify:prodApp', 'ngAnnotate:app']);
 	grunt.registerTask('default', ['dev', 'watch']);
 
 };
