@@ -23,6 +23,14 @@
 			templateUrl: '/app/views/scope-apply.html',
 			controller: 'scopeApplyController'
 		})
+		.when('/list-add-remove-sort-jq', {
+			templateUrl: '/app/views/list-add-remove-sort-jq.html',
+			controller: 'listAddRemoveSortJqController'
+		})
+		.when('/list-add-remove-sort-ng', {
+			templateUrl: '/app/views/list-add-remove-sort-ng.html',
+			controller: 'listAddRemoveSortNgController'
+		})
 		
 		.otherwise('/');
 		
