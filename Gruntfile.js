@@ -70,8 +70,8 @@ module.exports = function (grunt) {
 
 
 
-	grunt.registerTask('dev', ['clean', 'uglify:devLib', 'uglify:devApp', 'ngAnnotate:app']);
-	grunt.registerTask('prod', ['clean', 'uglify:prodLib', 'uglify:prodApp', 'ngAnnotate:app']);
+	grunt.registerTask('dev', ['clean', 'uglify:devLib', 'uglify:devApp']);
+	grunt.registerTask('prod', ['clean', 'uglify:prodLib', 'uglify:prodApp']);
 	grunt.registerTask('default', ['dev', 'watch']);
 
 };
