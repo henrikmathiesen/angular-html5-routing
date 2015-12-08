@@ -1,1 +1,15 @@
 <h2>List - add, remove, sort - NG</h2>
+
+<ul>
+	<li ng-repeat="name in names">
+		<span>{{ name }}</span>&nbsp;&nbsp;
+		<span ng-click="sortUp($index)">Up</span>&nbsp;&nbsp;
+		<span ng-click="sortDown($index)">Down</span>&nbsp;&nbsp;
+		<span ng-click="removeName($index)">Remove</span>&nbsp;&nbsp;
+	</li>
+</ul>
+
+<div>
+	<input type="text" placeholder="Add name" ng-model="newName">
+	<button ng-click="addName()">Add</button>
+</div>
