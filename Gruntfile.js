@@ -5,7 +5,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-ng-annotate');
 
 
 	var jsBundleLib = {
@@ -45,17 +44,6 @@ module.exports = function (grunt) {
 			prodApp: {
 				files: jsBundleApp,
 				options: { compress: { pure_funcs: ['console.log'] } }
-			}
-		},
-
-		ngAnnotate: {
-			options: {
-				singleQuotes: true,
-			},
-			app: {
-				files: { 
-					'./app/js/bld/app.js': ['./app/js/bld/app.js'] 
-				}
 			}
 		},
 
