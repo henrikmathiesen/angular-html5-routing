@@ -31,11 +31,11 @@ module.exports = function (grunt) {
 		uglify: {
 			devLib: {
 				files: jsBundleLib,
-				options: { sourceMap: true }
+				options: { sourceMap: true, sourceMapIncludeSources: true }
 			},
 			devApp: {
 				files: jsBundleApp,
-				options: { sourceMap: true }
+				options: { sourceMap: true, sourceMapIncludeSources: true }
 			},
 			prodLib: {
 				files: jsBundleLib,
