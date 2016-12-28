@@ -1,5 +1,5 @@
 {
-  "name": "angularhtml5routing",
+  "name": "angular-html5-routing",
   "version": "1.0.0",
   "description": "We look at nice urls with HTML5 routing, plus recap some things, with Angular",
   "main": "index.js",
@@ -8,21 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/henrikmathiesen/angularHtml5Routing.git"
+    "url": "git+https://github.com/henrikmathiesen/angular-html5-routing.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/henrikmathiesen/angularHtml5Routing/issues"
+    "url": "https://github.com/henrikmathiesen/angular-html5-routing/issues"
   },
-  "homepage": "https://github.com/henrikmathiesen/angularHtml5Routing#readme",
+  "homepage": "https://github.com/henrikmathiesen/angular-html5-routing#readme",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-clean": "^0.7.0",
-    "grunt-contrib-uglify": "^0.11.0",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "0.7.0",
+    "grunt-contrib-uglify": "0.11.0",
+    "grunt-contrib-watch": "0.6.1"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "4.13.3"
   }
 }
